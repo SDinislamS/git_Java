@@ -34,7 +34,7 @@ public class AlgebraMultiplyTwoMatrices {
             for (int j = 0; j < 3; j++) {
                 System.out.print(matrix2[i][j] + " ");
             }
-
+            //dfsdafd
             if(i == 1)
                 System.out.print("  =  ");
             else
