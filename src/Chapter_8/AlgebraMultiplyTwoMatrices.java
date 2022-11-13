@@ -18,7 +18,7 @@ public class AlgebraMultiplyTwoMatrices {
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                matrix1[i][j] = input.nextDouble();
+                matrix2[i][j] = input.nextDouble();
             }
         }
         double[][] matrix3 = multiplyMatrix(matrix1, matrix2);
@@ -29,7 +29,7 @@ public class AlgebraMultiplyTwoMatrices {
             if(i == 1)
                 System.out.print("  *  ");
             else
-                System.out.print("    ");
+                System.out.print("     ");
 
             for (int j = 0; j < 3; j++) {
                 System.out.print(matrix2[i][j] + " ");
@@ -47,15 +47,20 @@ public class AlgebraMultiplyTwoMatrices {
         }
     }
     public static double[][] multiplyMatrix(double[][] a, double[][] b){
-        double[][] c = new double[a.length][a.length];
-        for (int i = 0; i < a.length; i++) {
-            for (int j = 0; j < a.length; j++) {
-                for (int k = 0; k < a[i].length; k++) {
-                    c[i][j] += a[i][k] * b[k][j];
-                }
+        double[][] matrix = new double[3][3];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                matrix[i][j] = a[i][0] * b[0][j] + a[i][1] * b[1][j] + a[i][2] * b[2][j];
+                System.out.print(j);
+
             }
+            System.out.println();
+            System.out.print(i);
+            System.out.println();
+
         }
-        return c;
+        return matrix;
     }
 }
-/*0 2 4 1 4,5 2,2 1,1 4,3 5,2*/
+/*0 2 4 1 4,5 2,2 1,1 4,3 5,2
+* 1 2 3 4 5 6 7 8 9*/
