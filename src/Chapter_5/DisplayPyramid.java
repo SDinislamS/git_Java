@@ -16,7 +16,6 @@ public class DisplayPyramid {
 
             }
             System.out.println("");
-            
         }
     }
 }
