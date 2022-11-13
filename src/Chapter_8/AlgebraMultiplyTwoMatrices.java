@@ -52,7 +52,6 @@ public class AlgebraMultiplyTwoMatrices {
             for (int j = 0; j < 3; j++) {
                 matrix[i][j] = a[i][0] * b[0][j] + a[i][1] * b[1][j] + a[i][2] * b[2][j];
                 System.out.print(j);
-
             }
             System.out.println();
             System.out.print(i);
